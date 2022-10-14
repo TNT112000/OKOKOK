@@ -1,158 +1,309 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>  
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js" ></script>    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Happy birthday Nga </title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="myscript.js">
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy birthday Nga </title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="myscript.js">
 </head>
 <script>
-    var i = 0;
-    var txt = 'Chúc mừng sinh nhật Nga nhé!!!';
-    var speed = 100;
-    function type1() {
-    if(i < txt.length) {
-        document.getElementById("demo").innerHTML += txt.charAt(i);
-        i++;
-        setTimeout(type1, speed);
+  var i = 0;
+  var txt = 'Chúc mừng sinh nhật Nga nhé!!!';
+  var speed = 100;
+  function type1() {
+    if (i < txt.length) {
+      document.getElementById("demo").innerHTML += txt.charAt(i);
+      i++;
+      setTimeout(type1, speed);
     }
-}</script>
+  }</script>
+
 <body>
-    <div class="musical">
-      <audio controls autoplay loop>
-          <source src="./music/Happy Birthday To You - KTM.mp3">
-         
-      </audio>
-      <p style="margin-left: 30px;">Bật nhạc ở đây nhé  </p>
-    </div>
-    <div class="birthday">
-        <div class="birthday_inner">
-          <div class="birthday_inner__modal">
-            <div class="modal_image">
-              <img /></div>
-            <div class="modal_content">
-              <h1>Title</h1>
-              <p>Content</p>
-              <button>OK, Let's go</button>
-            </div>
-          </div>
-          <div class="birthday_inner__stage stage1">
-            <div class="intro_cake">
-              <img class="intro" src="" />
-              <div class="gallery">
-                <span style="--i:1">
-                  <img src="./z3800100221673_1ee43cc4c5791f96d06bf5e56567ed7d (1).jpg" alt="" />
-                </span>
-                <span style="--i:2">
-                  <img src="./z3800100225815_419d915bbf9abdbdb19f9194178f2d04.jpg" alt="" />
-                </span>
-                <span style="--i:3">
-                  <img src="./z3800100232845_669178b0bcd5462787d4415061e1b570.jpg" alt="" />
-                </span>
-                <span style="--i:4">
-                  <img src="./z3800100237598_796ac6d06926d37e8e20abe948fb0495.jpg" alt="" />
-                </span>
-                <span style="--i:5">
-                  <img src="./z3800100243253_01e4a400d073dbce7bc8810dfb3d3024.jpg" alt="" />
-                </span>
-                <span style="--i:6">
-                  <img src="./z3800100252012_e74db41bd5f1b098ac07ea6c576607cc.jpg" alt="" />
-                </span>
-                <span style="--i:7">
-                  <img src="./298099785_1489337488204003_3713830344190009692_n.jpg" alt="" />
-                </span>
-                <span style="--i:8">
-                  <img src="./120435163_1034481300356293_7816153818177813979_n.jpg" alt="" />
-                </span>
-              </div>
-            </div>
-            <button class="start">Let’s make a cake</button>
-          </div>
-          <div class="birthday_inner__stage stage2">
-            <h1>Let’s get mixing</h1>
-            <h2> Click the mix button below until the mixture is nice and smooth.</h2>
-            <div class="mix">
-              <div class="mix_bowl">
-                <img src ='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/bowl.png'/></div>
-              <div class="mix_spoon">
-                <img src ='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/spoon.png'/></div>
-            </div>
-            <button class="mixer">Click here to mix</button>
-          </div>
-          <div class="birthday_inner__stage stage3">
-            <h1>Let’s bake our base</h1>
-            <h2>Alright, Cho bánh vào lò thuii **kéo bánh lên chiếc lò nhé!!**.</h2>
-            <div class="oven">
-              <img src = 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/oven.png'/></div>
-            <div class="tin">
-              <img src ='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/tin.png'/></div>
-          </div>
-          <div class="birthday_inner__stage stage4">
-            <h1>Let’s make the cake</h1>
-            <h2>Build your cake in any order you want. Click an ingredient to add it to your cake. You can add more than one item e.g 2 vanilla sponges but only 5 bases and 6 fillings.  Hit the button at the bottom to finish your cake and add your candles. Make sure you leave some icing for the top of your cake!</h2>
-            <div class="svg">
-              <svg id="Layer_1 " width="800"><text x="-10" y="50" fill= "#FF99CC"; stroke= "#000000";  font-size= "48px";>HAPPY BIRTHDAY NGA
-               </svg>
-               <p id="demo"></p>
-            </text>
-            </div>
-            <div class="options">
-              <div class="sponges inactive">
-                <h3>Sponges</h3>
-                <h5>
-                  <span>0</span>
-                  / 5
-                </h5>
-                <div class="item">
-                  <div class="item_inner vanilla"></div>
-                  <h4>Vanilla</h4>
-                </div>
-                <div class="item">
-                  <div class="item_inner strawberry"></div>
-                  <h4>Pink</h4>
-                </div>
-                <div class="item">
-                  <div class="item_inner fruit"></div>
-                  <h4>Fruit</h4>
-                </div>
-              </div>
-              <div class="fillings">
-                <h3>Fillings/icing</h3>
-                <h5>
-                  <span>0</span>
-                  / 6
-                </h5>
-                <div class="item">
-                  <div class="item_inner jam"></div>
-                  <h4>Jam</h4>
-                </div>
-                <div class="item">
-                  <div class="item_inner cream"></div>
-                  <h4>Cream</h4>
-                </div>
-                <div class="item">
-                  <div class="item_inner choc"></div>
-                  <h4>Choc</h4>
-                </div>
-                <div class="item">
-                  <div class="item_inner lemon"></div>
-                  <h4>Lemon</h4>
-                </div>
-              </div>
-            </div>
-            <div class="cakemake">
-              <div class="base"></div>
-            </div>
-            <div class="startagain">Start again</div>
-            <button class="add" onclick="type1()">Add the candle</button>
-            <button class="sa">Start again</button>
-          </div>
+  <div class="musical">
+    <audio controls autoplay loop>
+      <source src="./music/Happy Birthday To You - KTM.mp3">
+
+    </audio>
+    <p style="margin-left: 30px;">Bật nhạc ở đây nhé </p>
+  </div>
+  <div class="birthday">
+    <div class="birthday_inner">
+      <div class="birthday_inner__modal">
+        <div class="modal_image">
+          <img />
+        </div>
+        <div class="modal_content">
+          <h1>Title</h1>
+          <p>Content</p>
+          <button>OK, Let's go</button>
         </div>
       </div>
+      <div class="birthday_inner__stage stage1">
+        <div class="intro_cake">
+          <img class="intro" src="" />
+          <div class="gallery">
+            <span style="--i:1">
+              <img src="./z3800100221673_1ee43cc4c5791f96d06bf5e56567ed7d (1).jpg" alt="" />
+            </span>
+            <span style="--i:2">
+              <img src="./z3800100225815_419d915bbf9abdbdb19f9194178f2d04.jpg" alt="" />
+            </span>
+            <span style="--i:3">
+              <img src="./z3800100232845_669178b0bcd5462787d4415061e1b570.jpg" alt="" />
+            </span>
+            <span style="--i:4">
+              <img src="./z3800100237598_796ac6d06926d37e8e20abe948fb0495.jpg" alt="" />
+            </span>
+            <span style="--i:5">
+              <img src="./z3800100243253_01e4a400d073dbce7bc8810dfb3d3024.jpg" alt="" />
+            </span>
+            <span style="--i:6">
+              <img src="./z3800100252012_e74db41bd5f1b098ac07ea6c576607cc.jpg" alt="" />
+            </span>
+            <span style="--i:7">
+              <img src="./298099785_1489337488204003_3713830344190009692_n.jpg" alt="" />
+            </span>
+            <span style="--i:8">
+              <img src="./120435163_1034481300356293_7816153818177813979_n.jpg" alt="" />
+            </span>
+          </div>
+        </div>
+        <button class="start">Let’s make a cake</button>
+      </div>
+      <div class="birthday_inner__stage stage2">
+        <h1>Let’s get mixing</h1>
+        <h2> Click the mix button below until the mixture is nice and smooth.</h2>
+        <div class="mix">
+          <div class="mix_bowl">
+            <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/bowl.png' />
+          </div>
+          <div class="mix_spoon">
+            <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/spoon.png' />
+          </div>
+        </div>
+        <button class="mixer">Click here to mix</button>
+      </div>
+      <div class="birthday_inner__stage stage3">
+        <h1>Let’s bake our base</h1>
+        <h2>Alright, Cho bánh vào lò thuii **kéo bánh lên chiếc lò nhé!!**.</h2>
+        <div class="oven">
+          <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/oven.png' />
+        </div>
+        <div class="tin">
+          <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/tin.png' />
+        </div>
+      </div>
+      <div class="birthday_inner__stage stage4">
+        <h1>Let’s make the cake</h1>
+        <h2>Build your cake in any order you want. Click an ingredient to add it to your cake. You can add more than one
+          item e.g 2 vanilla sponges but only 5 bases and 6 fillings. Hit the button at the bottom to finish your cake
+          and add your candles. Make sure you leave some icing for the top of your cake!</h2>
+        <div class="svg">
+          <svg id="Layer_1 " width="800"><text x="-10" y="50" fill="#FF99CC" ; stroke="#000000" ; font-size="48px"
+              ;>HAPPY BIRTHDAY NGA
+          </svg>
+          <p id="demo"></p>
+          </text>
+        </div>
+        <div class="options">
+          <div class="sponges inactive">
+            <h3>Sponges</h3>
+            <h5>
+              <span>0</span>
+              / 5
+            </h5>
+            <div class="item">
+              <div class="item_inner vanilla"></div>
+              <h4>Vanilla</h4>
+            </div>
+            <div class="item">
+              <div class="item_inner strawberry"></div>
+              <h4>Pink</h4>
+            </div>
+            <div class="item">
+              <div class="item_inner fruit"></div>
+              <h4>Fruit</h4>
+            </div>
+          </div>
+          <div class="fillings">
+            <h3>Fillings/icing</h3>
+            <h5>
+              <span>0</span>
+              / 6
+            </h5>
+            <div class="item">
+              <div class="item_inner jam"></div>
+              <h4>Jam</h4>
+            </div>
+            <div class="item">
+              <div class="item_inner cream"></div>
+              <h4>Cream</h4>
+            </div>
+            <div class="item">
+              <div class="item_inner choc"></div>
+              <h4>Choc</h4>
+            </div>
+            <div class="item">
+              <div class="item_inner lemon"></div>
+              <h4>Lemon</h4>
+            </div>
+          </div>
+        </div>
+        <div class="cakemake">
+          <div class="base"></div>
+        </div>
+        <div class="startagain">Start again</div>
+        <button class="add" onclick="type1()">Add the candle</button>
+        <button class="sa">Start again</button>
+      </div>
+    </div>
+  </div>
+  <script>
+    $('.start').click(function () {
+      $('.stage1').fadeOut();
+      fire_modal('https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/cake_modal.png', 'Let’s make a cake!', 'Làm bánh thuii nào .Chúc sinh nhật vui vẻ và hạnh phúc');
+    })
+
+    progress = 1;
+
+    $('.modal_content button').click(function () {
+      progress++;
+      close_modal(progress)
+    })
+
+    function close_modal(callback) {
+      modal.css('transform', 'translateY(-50%) scale(0)')
+      setTimeout(function () {
+        $('.stage' + callback).fadeIn();
+      }, 600)
+    }
+
+
+    function fire_modal(imgurl, title, content) {
+
+      modal = $('.birthday_inner__modal');
+      modal.find('h1').html(title);
+      modal.find('img').attr('src', imgurl);
+      modal.find('p').html(content);
+      setTimeout(function () {
+        modal.css('transform', 'translateY(-50%) scale(1)')
+      }, 1000)
+
+
+    }
+
+
+    mixing = false;
+    mixtimes = 0;
+
+    $('.mixer').click(function () {
+      if (mixing == false) {
+        mixing = true
+        mixtimes++;
+        $('.mix_spoon img').addClass('move')
+        setTimeout(function () {
+          $('.mix_spoon img').removeClass('move')
+          mixing = false;
+        }, 1000)
+      }
+      if (mixtimes == 1) {
+        $('.stage2').fadeOut();
+        fire_modal('https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/mix_modal.png', 'Mix successful!', 'Mix cho mình chiếc bánh xinh xẻo .');
+
+      }
+
+    })
+
+    $('.tin').draggable({
+      revert: true
+    })
+    $(".oven").droppable({
+      drop: function (event, ui) {
+        $('.stage3').fadeOut();
+        fire_modal('https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/oven_modal.png', 'Bake successfull!', 'Yes! You are a master chef. The base is fully baked and looks super yummy. Now its time to combine this base with lots of other ingredients like jam, marmalade, chocolate and more.');
+      }
+    })
+
+    bases = 0;
+    fillings = 0;
+
+    $('.sponges .item_inner').click(function () {
+      $('.sponges').addClass('inactive')
+      $('.fillings').removeClass('inactive')
+      t = $(this).attr('class').split(' ').pop();
+      bases++
+      if (bases < 6) {
+        add_sponge(t)
+      }
+    })
+
+    $('.fillings .item_inner').click(function () {
+      $('.fillings').addClass('inactive')
+      $('.sponges').removeClass('inactive')
+      f = $(this).attr('class').split(' ').pop();
+      fillings++
+      if (fillings < 7) {
+        add_filling(f)
+      }
+    })
+
+    function add_sponge(t) {
+
+      $('.cakemake').prepend('<div style="width:' + (200 - (bases * 20)) + 'px" class="sponge sponge-' + t + '"><div></div><div></div><div></div><div></div><div></div></div>')
+      $('.sponges h5 span').html(bases)
+    }
+
+    $('.startagain').click(function () {
+      $('.cakemake').html('<div class="base"></div>');
+      bases = 0;
+      fillings = 0;
+      $('.sponges h5 span').html(bases)
+      $('.fillings h5 span').html(fillings)
+      $('.fillings').removeClass('inactive')
+      $('.sponges').addClass('inactive')
+    })
+    function add_filling(f) {
+
+      $('.cakemake').prepend('<div style="width:' + (200 - (bases * 20)) + 'px" class="filling filling-' + f + '"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>')
+      $('.fillings h5 span').html(fillings)
+    }
+
+    function fin() {
+      $('h1,h2,.options,.startagain,.add').fadeOut();
+
+      setTimeout(function () {
+        $('.cakemake').fadeIn()
+        $('.cakemake').animate({ 'margin-top': '0px' })
+      }, 1000)
+      add_candle()
+      $('svg').addClass('text')
+    }
+
+    function add_candle() {
+      var stages = $('.cakemake > div').length;
+      var h = (stages / 2) * 41 + 22 + 'px';
+      console.log(stages)
+      $('.cakemake').prepend('<div class="candle" ><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/candle.png" /></div>')
+      $('svg').show()
+      setTimeout(function () {
+        $('.sa').fadeIn()
+      }, 2200)
+
+    }
+
+    $('.add').click(function () {
+      fin();
+    })
+
+    $('.sa').click(function () {
+      window.location.reload();
+    })
+  </script>
 </body>
-<script src="myscript.js"></script>
+
 </html>
